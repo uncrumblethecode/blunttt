@@ -13,6 +13,9 @@ import Divider from "@modules/common/components/divider"
 import { usePathname, useRouter, useSearchParams } from "next/navigation"
 import { useCallback, useEffect, useState } from "react"
 
+
+
+
 const Payment = ({
   cart,
   availablePaymentMethods,
@@ -71,6 +74,7 @@ const Payment = ({
       scroll: false,
     })
   }
+
 
   const handleSubmit = async () => {
     setIsLoading(true)
@@ -134,6 +138,7 @@ const Payment = ({
           </Text>
         )}
       </div>
+      
       <div>
         <div className={isOpen ? "block" : "hidden"}>
           {!paidByGiftcard && availablePaymentMethods?.length && (

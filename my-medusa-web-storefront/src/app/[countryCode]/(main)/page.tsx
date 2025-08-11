@@ -228,9 +228,9 @@ export default async function Home({
     <>
       <Hero />
 
-      <div className="py-12">
+      {/* <div className="py-12">
         <FeaturedProducts collections={collections} region={region} />
-      </div>
+      </div> */}
 
       {/* STORE TEMPLATE SECTION */}
       <div
