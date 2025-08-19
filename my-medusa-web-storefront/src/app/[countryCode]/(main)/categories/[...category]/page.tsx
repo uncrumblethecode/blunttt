@@ -52,7 +52,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
     const description = productCategory.description ?? `${title} category.`
 
     return {
-      title: `${title} | Inqlaab`,
+      title: `${title} | Blunttt`,
       description,
       alternates: {
         canonical: `${params.category.join("/")}`,

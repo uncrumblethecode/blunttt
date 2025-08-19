@@ -20,7 +20,7 @@
 //               href="/"
 //               className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
 //             >
-//               Inqlaab
+//               Blunttt
 //             </LocalizedClientLink>
 //           </div>
 //           <div className="text-small-regular gap-10 md:gap-x-16 grid grid-cols-2 sm:grid-cols-3">
@@ -110,7 +110,7 @@
 //               </div>
 //             )}
 //             <div className="flex flex-col gap-y-2">
-//               <span className="txt-small-plus txt-ui-fg-base">Inqlaab</span>
+//               <span className="txt-small-plus txt-ui-fg-base">Blunttt</span>
 //               <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
 //                 <li>
 //                   <a
@@ -148,7 +148,7 @@
 //         </div>
 //         <div className="flex w-full mb-16 justify-between text-ui-fg-muted">
 //           <Text className="txt-compact-small">
-//             © {new Date().getFullYear()} Inqlaab. All rights reserved.
+//             © {new Date().getFullYear()} Blunttt. All rights reserved.
 //           </Text>
 //           <MedusaCTA />
 //         </div>
@@ -178,10 +178,10 @@ export default async function Footer() {
               href="/"
               className="text-2xl font-bold tracking-wide uppercase text-gray-800 hover:text-black"
             >
-              Inqlaab
+              Blunttt
             </LocalizedClientLink>
             <p className="mt-4 text-sm text-gray-500 max-w-xs">
-              Discover timeless style and curated fashion through Inqlaab’s unique collections.
+              Discover timeless style and curated fashion through Blunttt’s unique collections.
             </p>
           </div>
 
@@ -294,7 +294,7 @@ export default async function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 border-t pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 gap-4">
           <Text className="txt-compact-small">
-            © {new Date().getFullYear()} Inqlaab. All rights reserved.
+            © {new Date().getFullYear()} Blunttt. All rights reserved.
           </Text>
           <MedusaCTA />
         </div>

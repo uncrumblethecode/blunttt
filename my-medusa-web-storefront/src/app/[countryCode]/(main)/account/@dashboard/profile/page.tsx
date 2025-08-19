@@ -12,7 +12,7 @@ import { retrieveCustomer } from "@lib/data/customer"
 
 export const metadata: Metadata = {
   title: "Profile",
-  description: "View and edit your Inqlaab profile.",
+  description: "View and edit your Blunttt profile.",
 }
 
 export default async function Profile() {

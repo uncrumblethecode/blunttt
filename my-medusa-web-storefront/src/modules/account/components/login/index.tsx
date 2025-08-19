@@ -4,6 +4,7 @@ import ErrorMessage from "@modules/checkout/components/error-message"
 import { SubmitButton } from "@modules/checkout/components/submit-button"
 import Input from "@modules/common/components/input"
 import { useActionState } from "react"
+import Link from "next/link"
 
 type Props = {
   setCurrentView: (view: LOGIN_VIEW) => void
@@ -45,7 +46,12 @@ const Login = ({ setCurrentView }: Props) => {
         <SubmitButton data-testid="sign-in-button" className="w-full mt-6">
           Sign in
         </SubmitButton>
-      </form>
+      </form><br />
+      {/* adding forgot password option */}
+      <a href="/forgot-password" className="text-blue-500">
+  Forgot your password?
+</a>
+      {/*  */}
       <span className="text-center text-ui-fg-base text-small-regular mt-6">
         Not a member?{" "}
         <button

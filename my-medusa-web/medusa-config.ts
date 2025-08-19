@@ -1,6 +1,5 @@
-import { loadEnv, defineConfig } from '@medusajs/framework/utils'
-
-loadEnv(process.env.NODE_ENV || 'development', process.cwd())
+import { loadEnv, defineConfig } from "@medusajs/framework/utils";
+loadEnv(process.env.NODE_ENV || "development", process.cwd());
 
 module.exports = defineConfig({
   projectConfig: {
@@ -11,9 +10,10 @@ module.exports = defineConfig({
       authCors: process.env.AUTH_CORS!,
       jwtSecret: process.env.JWT_SECRET || "supersecret",
       cookieSecret: process.env.COOKIE_SECRET || "supersecret",
-    }
+    },
   },
   modules: [
+    // Payment module
     {
       resolve: "@medusajs/medusa/payment",
       options: {
@@ -23,14 +23,12 @@ module.exports = defineConfig({
             id: "stripe",
             options: {
               apiKey: process.env.STRIPE_API_KEY,
-              
             },
           },
         ],
       },
     },
-  ],
-  modules: [
+    // Notification module
     {
       resolve: "@medusajs/medusa/notification",
       options: {
@@ -46,6 +44,22 @@ module.exports = defineConfig({
         ],
       },
     },
+    {
+      resolve: "@medusajs/medusa/notification",
+      options: {
+        providers: [
+          // ...
+          {
+            resolve: "@medusajs/medusa/notification-sendgrid",
+            id: "sendgrid",
+            options: {
+              channels: ["email"],
+              api_key: process.env.SENDGRID_API_KEY,
+              from: process.env.SENDGRID_FROM,              
+            },
+          },
+        ],
+      },
+    },
   ],
-
-})
+});
